@@ -28,6 +28,11 @@ abstract class Achievement
      */
     public $description = "";
 
+    /*
+     * A small icon for the achievement
+     */
+    public $icon = "";
+
     /**
      * The amount of points required to unlock this achievement.
      */
@@ -83,6 +88,7 @@ abstract class Achievement
         // Updates the model with data from the achievement class
         $model->name        = $this->name;
         $model->description = $this->description;
+        $model->icon        = $this->icon;
         $model->points      = $this->points;
         $model->secret      = $this->secret;
 
